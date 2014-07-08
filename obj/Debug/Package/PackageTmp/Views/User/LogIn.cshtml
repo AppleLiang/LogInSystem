@@ -1,0 +1,30 @@
+﻿@model LogInSystem.Models.UserModel
+
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Login failed, check your log in information");
+    <div>
+        <fieldset>
+            <legend>Login Form</legend>
+            <div>@Html.LabelFor(u => u.Email)</div>
+
+            <div>@Html.TextBoxFor(u => u.Email)
+                 @Html.ValidationMessageFor(u => u.Email)            
+            </div>
+
+            <div>@Html.LabelFor(u => u.Password)</div>
+
+            <div>
+                @Html.PasswordFor(u => u.Password)
+                @Html.ValidationMessageFor(u => u.Password)
+            </div>
+            <input type="submit" value="Log In" />
+
+        </fieldset>
+    </div>
+}

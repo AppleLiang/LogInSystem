@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-LogInSystem-20140626152022;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-LogInSystem-20140626152022.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="AzureMainDbEntities-Web.config Connection String" description="AzureMainDbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/AzureMainDbModel.csdl|res://*/AzureMainDbModel.ssdl|res://*/AzureMainDbModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=uy5tsql19z.database.windows.net;initial catalog=loginweAhTqZ2FKC;persist security info=True;user id=lmengchen;password=!Lmc19901111;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AzureMainDbEntities']/@connectionString" />
+  </parameter>
+  <parameter name="LogInSystem.MainDbEntities-Web.config Connection String" description="LogInSystem.MainDbEntities Connection String used in web.config by the application to access the database." defaultValue="LogInSystem.MainDbEntities_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LogInSystem.MainDbEntities']/@connectionString" />
+  </parameter>
+</parameters>

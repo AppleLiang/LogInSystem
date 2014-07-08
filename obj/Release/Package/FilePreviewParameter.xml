@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="loginweb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="loginweb/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:uy5tsql19z.database.windows.net,1433;Initial Catalog=loginweAhTqZ2FKC;User Id=lmengchen@uy5tsql19z;Password=!Lmc19901111" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MainDbEntities-Web.config Connection String" description="" value="metadata=res://*/MainDbModel.csdl|res://*/MainDbModel.ssdl|res://*/MainDbModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=tcp:uy5tsql19z.database.windows.net,1433;Initial Catalog=loginweAhTqZ2FKC;User Id=lmengchen@uy5tsql19z;Password=!Lmc19901111&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\learning\ files\\VS\\LogInSystem-master\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MainDbEntities']/@connectionString" />
+  </parameter>
+</parameters>
